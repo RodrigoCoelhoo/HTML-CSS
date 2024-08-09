@@ -1,0 +1,177 @@
+@font-face {
+	font-family: 'idroid';
+	src: url('fontes/idroid.otf') format(opentype);
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: #E8E7C2;
+	margin: 0px;
+}
+
+header {
+	color: white;
+	background-image: linear-gradient(0deg, #18582e, #1c723a,#228C47, #2AAD58, #3AF17A);
+	padding: 16px;
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1 {
+	text-align: center;
+	margin: auto;
+	font-size: 30px;
+}
+
+header > h2 {
+	text-align: center;
+	font-size: 16px;
+	padding: 30px;
+	margin: auto;
+	max-width: 500px;
+	font-weight: normal;
+}
+
+header > nav > a {
+	text-decoration: none;
+	color: #4bc776;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 15px;
+}
+
+header > nav > a:hover {
+	background-color: #228C47;
+	border-radius: 10px;
+}
+
+main {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	background-color: white;
+	max-width: 810px;
+	margin: auto;
+	margin-bottom: 30px;
+	border-radius: 0px 0px 15px 15px;
+	padding: 15px;
+}
+
+main > h1 {
+	margin: 0px;
+	color: #1c733a;
+	font-family: 'idroid';
+}
+
+main > h2 {
+	color: #228C47;
+	background-image: linear-gradient(90deg, #7fffaca1, #2aad582d, #2aad580c);
+	font-family: 'idroid';
+}
+
+main > p {
+	text-indent: 32px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+}
+
+main > p > span {
+	color: #1c723a;
+	font-weight: bold;
+}
+
+main > p > a {
+	color: #1c723a;
+	text-decoration: none;
+	font-weight: bolder;
+	background-color: #3af17a86;
+}
+
+main > p > a::after {
+	content: ' 🔗';
+}
+
+main > p > a:hover {
+	text-decoration: underline;
+}
+
+main > picture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px; /* Espaço entre as imagens */
+}
+
+main > img {
+	max-width: 100%; /* Garante que a imagem seja responsiva */
+	height: auto; /* Mantém a proporção */
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    border: 20px solid #18582e; /* Borda ao redor do vídeo */
+    box-sizing: border-box; /* Inclui a borda no tamanho total do elemento */
+}
+
+.video > iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tabela {
+	background-color: #4bc7766c;
+	border-radius: 10px;
+	padding-bottom: 10px;
+}
+
+.tabela > h3 {
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+	background-color: #27a352;
+	border-radius: 10px 10px 0px 0px;
+}
+
+.tabela > p {
+	padding: 10px;
+	text-indent: 16px;
+}
+
+.tabela > ul > li::before {
+	content: '✔ ';
+}
+
+.tabela > p > a {
+	color: #1c723a;
+	text-decoration: none;
+	font-weight: bolder;
+	background-color: #3af17a86;
+}
+
+.tabela > p > a::after {
+	content: ' 🔗';
+}
+
+footer {
+	background-color: #1c733a;
+	padding: 5px;
+}
+
+footer > p {
+	margin: 0px;
+	color: rgba(255, 255, 255, 0.808);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	font-weight: none;
+}
+
+footer > p > span {
+	font-weight: bold;
+	color: white;
+}

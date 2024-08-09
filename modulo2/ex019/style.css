@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+	em HTML é id = em CSS é #
+	em HTML é class = em CSS é .
+
+	O id é único, não pode exisitr 2 h1's com o mesmo id (apesar de funcionar, não está de acordo com W3C), para isso usa-se classes
+	É possivel um elemento ter + que 1 class, class="basico destaque"
+*/
+
+body {
+	background-color: #222222;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+h1 {
+	color: greenyellow;
+}
+
+h1#principal {
+	text-align: center;
+	background-color: green;
+	color: white;
+}
+
+h2 {
+	color: rgb(107, 160, 28);
+}
+
+.basico {
+	color: rgb(153, 255, 0);
+}
+
+.intermediario {
+	color:yellow
+}
+
+.avancado {
+	color:red
+}
+
+.destaque {
+	background-color: rgba(102, 255, 0, 0.171);
+}

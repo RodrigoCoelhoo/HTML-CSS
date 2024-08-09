@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Modelo de caixas</title>
+	<style>
+		body {
+			background-color: #222;
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		h1 {
+			text-align: center;
+
+			height: 80px;
+			width: 240px;
+
+			border: 10px outset rgba(23, 148, 148, 0.808);
+			border-radius: 10px;
+			/*border-width: 10px;
+			border-style: outset;
+			border-color: rgba(23, 148, 148, 0.808);*/
+
+			padding: 10px 11px 12px 13px;
+			/*
+			padding-top: 10px;
+			padding-right: 11px;
+			padding-bottom: 12px;
+			padding-left: 13px;
+			
+			Se forem todas iguais é só preciso 1 "argumento" padding: 10px;
+			padding 10px 20px; -> Em cima e em baixo 10px, direita esquerda 20px
+			*/
+
+			margin: auto; /*Centralizar*/
+			/*margin: 10px;
+			margin-top: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			margin-left: 10px;*/
+
+			outline: 2px solid cyan;
+			/*outline-width: 2px;
+			outline-style: solid;
+			outline-color: cyan;*/
+		}
+
+
+		a {
+			color: cyan;
+			text-decoration: none;
+			border-style: dashed;
+			border-color: red;
+			border-radius: 10px;
+			padding: 8px;
+			border-width: 2px;
+		}
+
+		h1:hover{
+			background-color: white;
+			color: #222;
+		}
+
+		div > img {
+			display: none;
+		}
+
+		div:hover > img {
+			display: block;
+			padding-top:20px;
+			margin:auto;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<h1>Exemplo de caixa box-level</h1>
+		<img src="img/paisagem-650.jpeg" alt="">
+	</div>
+	<p>Parágrafos também são exemplos de box-level, mas os <a href="#" target="_blank">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+	background-color: rgb(31, 30, 30);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+	color: gold;
+}
+
+h2 {
+	color: goldenrod;
+}
+
+p {
+	color: white;
+	text-align: justify;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
